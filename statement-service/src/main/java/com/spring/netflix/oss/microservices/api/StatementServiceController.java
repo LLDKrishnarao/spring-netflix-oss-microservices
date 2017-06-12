@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.spring.netflix.oss.microservices.model.Statement;
 
@@ -19,6 +20,8 @@ import com.spring.netflix.oss.microservices.model.Statement;
  * @author LakshmiKrishna
  *
  */
+@RestController
+@RequestMapping(value="/api")
 public class StatementServiceController {
 	private List<Statement> fakeRepo;
     
